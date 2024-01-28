@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{ */
+            /*  block elemnts are div,p,h1 etc.
+            1) new line 2) width: extra left or right 3) custom change ht and width  */
+            /* border: 1px solid red;
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+
+        } */
+        /* inline : a, span : u can  apply custom w/h 
+         donot apply custom margine 
+         1) same line 2) width constant 3) cusyom w/h no no 4) horizontal margin yes yes vertical nono */
+        *{
+            margin: 0;
+            padding: 0;
+            /* this means box will not change only content change  */
+            box-sizing: border-box;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            padding: 100px;
+        }
+        span{
+            border: 2px solid green;
+            width: 300px;
+            height: 400px;
+            margin: 10px;
+            padding: 15px;
+            /* chng inline to block */
+            /* in inline block u can change w/h */
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        welcome to codehelp
+    </div>
+    <div>
+        welcome to codehelp2
+    </div> -->
+
+    <div class="box">
+        welcome to code help
+    </div>
+    <span>
+        lalaalala
+    </span>
+    <span>
+        lalaalala2
+    </span>
+</body>
+</html>
