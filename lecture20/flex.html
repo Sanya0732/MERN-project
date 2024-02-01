@@ -1,0 +1,61 @@
+<!-- flex container
+flex content  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: bisque;
+            border: 1px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            /* flex-direction: row; row in horizontal drn */
+            /* flex-direction:column; col means box in vertical  */
+            /* flex-wrap: wrap; */
+            /* main content k acc set krta */
+            justify-content: space-around;
+            height: 1200px;
+            /* align items place centrly in cross axis in verticle line  */
+            align-items: center;
+        }
+        .box{
+            /* height: 200px; */
+            width: 200px;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            /* order changes the priority of the box */
+            order: 500;
+            background-color: aquamarine;
+            /* flex shrink shrink the box 4 times than other boxes  */
+            flex-shrink: 4 ;
+        }
+        #box2{
+            background-color: coral;
+            flex-grow: 4;
+        }
+        #box3{
+           background-color: cyan;
+        }
+        #box4{
+               background-color: violet ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2" >box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+    </div>
+    
+</body>
+</html>
